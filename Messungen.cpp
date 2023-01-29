@@ -83,6 +83,14 @@ MESSREIHE aufgabe_p(MESSREIHE mr1, MESSREIHE mr2) {
 	return mr;
 };
 
+void aufgabe_q_max(MESSREIHE mr) {
+	mr.getMaxMesswert().print();
+};
+
+void aufgabe_q_min(MESSREIHE mr) {
+	mr.getMinMesswert().print();
+};
+
 int main() {
 	MESSREIHE mr1 = aufgabe_l();
 	MESSREIHE mr2 = aufgabe_m(mr1);
@@ -92,5 +100,12 @@ int main() {
 	std::cout << std::endl;
 	std::cout << "Messreihe 4:" << std::endl;
 	mr4.print();
+	
+	std::cout << "Minimaler Wert: ";
+	aufgabe_q_min(mr4);
+
+	std::cout << "Maximaler Wert: ";
+	aufgabe_q_max(mr4);
+
 	return 0;
 }
