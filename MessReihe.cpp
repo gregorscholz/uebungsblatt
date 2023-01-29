@@ -15,7 +15,12 @@ MESSREIHE::MESSREIHE(const MESSREIHE &m) {
 };
 
 MESSREIHE::~MESSREIHE() {
-	// TODO
+	/** 
+	 * TODO
+	 * eigl muss nur der Pointer gelöscht werden, 
+	 * vector und int werden eigl automatisch gelöscht
+	 */
+	delete messwertPointer;
 };
 
 MESSWERT MESSREIHE::getMesswertAtIndex(int index) {
