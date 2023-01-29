@@ -34,6 +34,8 @@ Messreihe 4:
 1.359e-07 W
 0.00108 W
 5e-10 W
-Minimaler Wert: 5e-10 W
+
 Maximaler Wert: 46 W
+
+Minimaler Wert: 5e-10 W
 ```

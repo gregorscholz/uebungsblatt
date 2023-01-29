@@ -83,11 +83,16 @@ MESSREIHE aufgabe_p(MESSREIHE mr1, MESSREIHE mr2) {
 	return mr;
 };
 
-void aufgabe_q_max(MESSREIHE mr) {
+void aufgabe_q(MESSREIHE mr) {
+	/**
+	 * Ermitteln Sie mit den Methoden aus j) und k) den kleinsten und den
+	 * größten Leistungswert und geben Sie diese beiden Messwerte aus.
+	 */
+	std::cout << "Maximaler Messwert: ";
 	mr.getMaxMesswert().print();
-};
+	std::cout << std::endl;
 
-void aufgabe_q_min(MESSREIHE mr) {
+	std::cout << "Minimaler Messwert: ";
 	mr.getMinMesswert().print();
 };
 
@@ -97,15 +102,14 @@ int main() {
 	aufgabe_n(mr1, mr2);
 	MESSREIHE mr3 = aufgabe_o();
 	MESSREIHE mr4 = aufgabe_p(mr1, mr3);
+	
 	std::cout << std::endl;
 	std::cout << "Messreihe 4:" << std::endl;
 	mr4.print();
 	
-	std::cout << "Minimaler Wert: ";
-	aufgabe_q_min(mr4);
+	std::cout << std::endl;
+	aufgabe_q(mr4);
 
-	std::cout << "Maximaler Wert: ";
-	aufgabe_q_max(mr4);
 
 	return 0;
 }
